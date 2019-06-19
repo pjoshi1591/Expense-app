@@ -1,8 +1,6 @@
 import React from 'react';
 import moment from 'moment';
 import { SingleDatePicker } from 'react-dates';
-import 'react-dates/initialize';
-import 'react-dates/lib/css/_datepicker.css';
 
 const now = moment();
 
@@ -52,8 +50,8 @@ export default class ExpenseForm extends React.Component {
                         autoFocus
                         value={this.state.description}
                         onChange={(e) => {
-                            e.persist();
-                            this.setState(() => ({ description:e.target.value }))
+                            const description = e.target.value;
+                            this.setState(() => ({ description }))
                         }} 
                     />
                     <input 
@@ -78,8 +76,8 @@ export default class ExpenseForm extends React.Component {
                     <textarea
                         value={this.state.note}
                         onChange={(e) => {
-                            e.persist();
-                            this.setState(() => ({ note:e.target.value }))
+                            const note = e.target.value;
+                            this.setState(() => ({ note }))
                         }} 
                         placeholder="Add a note for your expense(optional)">
                     </textarea>
