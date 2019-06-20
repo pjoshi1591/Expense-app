@@ -12,7 +12,7 @@ import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 
 const store = configureStore();
-
+console.log('test');
 store.dispatch(addExpense({description: 'Rent', amount: 100, createdAt: 5000}));
 store.dispatch(addExpense({description: 'Electricity', amount: 1000, createdAt: 1000}));
 store.dispatch(addExpense({description: 'Water Bill', amount: 30, createdAt: 1200}));
