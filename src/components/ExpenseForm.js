@@ -22,7 +22,7 @@ export default class ExpenseForm extends React.Component {
         }
     };
     onFocusChange = ({focused}) => {
-        this.setState(() => ({calendarFocused:focused}))
+        this.setState(() => ({calendarFocused:focused}));
     };
     onSubmit = (e) => {
         e.preventDefault();
