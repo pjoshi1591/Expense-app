@@ -29,3 +29,5 @@ To start the server: `yarn test`
 
 ## Start your own project
 Feel free to clone this repo and build your own version of Expensify! After cloning run: `npm install`
+
+> This project is part of my [React Course](https://www.udemy.com/react-2nd-edition/) (by Andrew Mead)
